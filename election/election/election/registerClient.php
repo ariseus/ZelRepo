@@ -159,7 +159,7 @@ if(isset($_POST['submitClient']))
 	
 	if($success)
 	{
-		$query2 = "insert into user_account(usertype, username, password) values(
+		$query2 = "insert into user_account(userType, username, password) values(
 		'{$usertype}','{$username}','{$password}')";
 		$result = mysqli_query($dbc,$query2);
 		
@@ -247,7 +247,7 @@ if(isset($_POST['submitClient']))
 					<div class ="row">
 						<div class ="col-md-12">
 							<h1 class="text-center  text-light mt-4x" style ="font-family: 'Oswald';">S T U D E N T  &nbsp; D A T A B A S E</h1>
-							<h4 class="text-center text-light" style ="font-family: 'HelveticaThin';  "> D e v e l o p e d &nbsp; b y &nbsp; C.M Dev Solutions</h4>
+							<h4 class="text-center text-light" style ="font-family: 'HelveticaThin';  "> D e v e l o p e d &nbsp; b y &nbsp; C.M. & R.B Dev Solutions (feat. AT)</h4>
 						</div>
 					</div>
 					<div class="row">

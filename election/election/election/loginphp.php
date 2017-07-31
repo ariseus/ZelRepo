@@ -54,7 +54,7 @@ $checkpass = true;
  }
 
 while( $row=mysqli_fetch_array($result,MYSQL_ASSOC)){ 
-	if(strtolower($username) == strtolower($row['username']) && crypt($password, '$1$!@#OK$')== $row['password'])
+	if(($username) == ($row['username']) && crypt($password, '$1$!@#OK$')== $row['password'])
 	{
 		$_SESSION["username"] = $username;
 		$_SESSION["password"] = $password;
